@@ -26,5 +26,6 @@ class WebTasks(TaskSet):
 
 class Web(HttpLocust):
     task_set = WebTasks
-    min_wait = 0
-    max_wait = 0
+    min_wait = 1000
+    max_wait = 5000
+    #wait_time = between(1, 5)
